@@ -11,36 +11,31 @@ class MyCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                width: 100.00,
-                color: Colors.red,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    width: 100.00,
-                    height: 100.00,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100.00,
-                    height: 100.00,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Container(
-                width: 100.00,
-                color: Colors.blue,
-              ),
-            ],
-          ),
-        ),
+            child: Column(
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundColor: Colors.red,
+              backgroundImage: AssetImage('images/akshay.jpg'),
+            ),
+            Text(
+              'Akshay purushottam shahane',
+              style: TextStyle(
+                  fontFamily: 'Kalam',
+                  fontSize: 26.0,
+                  color: Colors.white,
+                  letterSpacing: 3.0,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text('SOFTWARE DEVELOPER (ANDROID,FLUTTER)',
+                style: TextStyle(
+                    fontSize: 20.00,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'SourceSansPro'))
+          ],
+        )),
       ),
     );
   }
