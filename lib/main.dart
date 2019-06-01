@@ -33,7 +33,53 @@ class MyCardApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'SourceSansPro'))
+                    fontFamily: 'SourceSansPro')),
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 20.00,
+                  ),
+                  Text(
+                    "+91 9819669349",
+                    style: TextStyle(
+                        fontFamily: "SourceSansPro",
+                        fontSize: 20.0,
+                        color: Colors.teal),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 20.00,
+                  ),
+                  Text(
+                    "akshay.shahane13@gmail.com",
+                    style: TextStyle(
+                        fontFamily: "SourceSansPro",
+                        fontSize: 20.0,
+                        color: Colors.teal),
+                  )
+                ],
+              ),
+            )
           ],
         )),
       ),
