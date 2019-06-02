@@ -19,23 +19,38 @@ class MyCardApp extends StatelessWidget {
               backgroundColor: Colors.red,
               backgroundImage: AssetImage('images/akshay.jpg'),
             ),
-            Text(
-              'Akshay purushottam shahane',
-              style: TextStyle(
-                fontFamily: 'Kalam',
-                fontSize: 26.0,
-                color: Colors.white,
-                letterSpacing: 3.0,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                'Akshay purushottam shahane',
+                style: TextStyle(
+                  fontFamily: 'Kalam',
+                  fontSize: 26.0,
+                  color: Colors.white,
+                  letterSpacing: 3.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
-            Text('SOFTWARE DEVELOPER (ANDROID,FLUTTER)',
-                style: TextStyle(
-                    fontSize: 20.00,
-                    color: Colors.teal.shade100,
-                    letterSpacing: 2.5,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'SourceSansPro')),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text('SOFTWARE DEVELOPER (ANDROID,FLUTTER)',
+                  style: TextStyle(
+                      fontSize: 20.00,
+                      color: Colors.teal.shade100,
+                      letterSpacing: 2.5,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'SourceSansPro')),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: SizedBox(
+                child: Divider(
+                  color: Colors.teal.shade100,
+                  height: 20.0,
+                ),
+              ),
+            ),
             Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
