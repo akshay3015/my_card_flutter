@@ -12,6 +12,7 @@ class MyCardApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -21,11 +22,12 @@ class MyCardApp extends StatelessWidget {
             Text(
               'Akshay purushottam shahane',
               style: TextStyle(
-                  fontFamily: 'Kalam',
-                  fontSize: 26.0,
-                  color: Colors.white,
-                  letterSpacing: 3.0,
-                  fontWeight: FontWeight.bold),
+                fontFamily: 'Kalam',
+                fontSize: 26.0,
+                color: Colors.white,
+                letterSpacing: 3.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             Text('SOFTWARE DEVELOPER (ANDROID,FLUTTER)',
                 style: TextStyle(
@@ -34,52 +36,46 @@ class MyCardApp extends StatelessWidget {
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'SourceSansPro')),
-            Container(
+            Card(
               color: Colors.white,
-              padding: EdgeInsets.all(10.0),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
+              child: Padding(
+                padding: EdgeInsets.all(10.00),
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 20.00,
-                  ),
-                  Text(
+                  title: Text(
                     "+91 9819669349",
                     style: TextStyle(
                         fontFamily: "SourceSansPro",
                         fontSize: 20.0,
                         color: Colors.teal),
-                  )
-                ],
+                  ),
+                ),
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
-              padding: EdgeInsets.all(10.0),
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
+              child: Padding(
+                padding: EdgeInsets.all(10.00),
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 20.00,
-                  ),
-                  Text(
+                  title: Text(
                     "akshay.shahane13@gmail.com",
                     style: TextStyle(
                         fontFamily: "SourceSansPro",
                         fontSize: 20.0,
                         color: Colors.teal),
-                  )
-                ],
+                  ),
+                ),
               ),
-            )
+            ),
           ],
         )),
       ),
